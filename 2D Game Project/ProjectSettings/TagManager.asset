@@ -1,0 +1,78 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - 1
+  - 2
+  - 3
+  - 4
+  - Enemy
+  - Cherry
+  - WinCherry
+  - Enemy1
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - Player
+  - Water
+  - UI
+  - Ground
+  - 2
+  - 3
+  - 4
+  - 5
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: 1
+    uniqueID: 651576909
+    locked: 0
+  - name: 2
+    uniqueID: 3410734387
+    locked: 0
+  - name: 3
+    uniqueID: 2854592383
+    locked: 0
+  - name: 4
+    uniqueID: 2600243365
+    locked: 0
+  - name: 5
+    uniqueID: 1765565355
+    locked: 0
+  - name: 6
+    uniqueID: 2146124085
+    locked: 0
+  - name: player
+    uniqueID: 1002772993
+    locked: 0
+  - name: 7
+    uniqueID: 1700014295
+    locked: 0
+  - name: 8
+    uniqueID: 3005678619
+    locked: 0
