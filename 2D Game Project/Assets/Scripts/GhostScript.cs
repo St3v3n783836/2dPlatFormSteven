@@ -19,7 +19,7 @@ public class GhostScript : MonoBehaviour
     void Update()
     {
         
-        float speed = pc.Sanity/15;
+        float speed = pc.Sanity/200;
         if (transform.position.x > player.position.x)
         {
             transform.position = transform.position + new Vector3(-0.01f * speed, 0, 0);

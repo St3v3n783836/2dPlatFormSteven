@@ -31,7 +31,12 @@ public class PlayerController : MonoBehaviour
     public GameObject InsaneBackground;
     public GameObject Sane;
     public GameObject SaneSpikes;
-    
+    public GameObject InsaneText1;
+    public GameObject InsaneText2;
+    public GameObject InsaneText3;
+    public GameObject InsaneText4;
+    public GameObject InsaneText5;
+
     void Start()
     {
         _playerRb = GetComponent<Rigidbody2D>();
@@ -59,6 +64,7 @@ public class PlayerController : MonoBehaviour
         dead();
         fall();
         Check_Point();
+        InsanityVoices();
     }
     void run()
     {
@@ -197,6 +203,43 @@ public class PlayerController : MonoBehaviour
         {
             Sanity = 45;
                 
+        }
+    }
+    void InsanityVoices()
+    {
+        if (Sanity > 0 && Sanity < 41)
+        {
+            InsaneText1.gameObject.SetActive(true);
+            InsaneText5.gameObject.SetActive(false);
+            InsaneText4.gameObject.SetActive(false);
+            InsaneText3.gameObject.SetActive(false);
+            InsaneText2.gameObject.SetActive(false);
+        }
+        if (Sanity > 9 && Sanity < 41)
+        {
+            InsaneText2.gameObject.SetActive(true);
+            InsaneText5.gameObject.SetActive(false);
+            InsaneText4.gameObject.SetActive(false);
+            InsaneText3.gameObject.SetActive(false);
+        }
+        if (Sanity > 19 && Sanity < 41)
+        {
+            InsaneText3.gameObject.SetActive(true);
+            InsaneText5.gameObject.SetActive(false);
+            InsaneText4.gameObject.SetActive(false);
+        }
+        if (Sanity > 29 && Sanity < 41)
+        {
+            InsaneText4.gameObject.SetActive(true);
+            InsaneText5.gameObject.SetActive(false);
+        }
+        if (Sanity > 44)
+        {
+            InsaneText5.gameObject.SetActive(true);
+            InsaneText4.gameObject.SetActive(false);
+            InsaneText3.gameObject.SetActive(false);
+            InsaneText2.gameObject.SetActive(false);
+            InsaneText1.gameObject.SetActive(false);
         }
     }
 
